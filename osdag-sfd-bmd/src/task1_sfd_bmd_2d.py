@@ -25,9 +25,7 @@ def create_2d_diagrams(data_loader, output_dir="plots"):
     output_path = Path(output_dir)
     output_path.mkdir(exist_ok=True, parents=True)
 
-    print("\n" + "=" * 60)
     print("TASK 1: Creating 2D SFD and BMD for Central Girder")
-    print("=" * 60)
 
     print(f"\nCentral Girder Elements: {CENTRAL_GIRDER_ELEMENTS}")
 
@@ -78,7 +76,7 @@ def create_2d_diagrams(data_loader, output_dir="plots"):
     try:
         fig_bmd.write_image(str(bmd_path), width=1400, height=650, scale=2)
         fig_sfd.write_image(str(sfd_path), width=1400, height=650, scale=2)
-        print("✓ PNG images exported successfully")
+        print("PNG images exported successfully")
     except Exception as e:
         print("PNG export failed. Ensure 'kaleido' is installed.")
         print(f"   Error: {e}")

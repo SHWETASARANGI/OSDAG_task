@@ -30,9 +30,7 @@ def create_3d_diagrams(data_loader, output_dir="plots"):
     output_path = Path(output_dir)
     output_path.mkdir(exist_ok=True, parents=True)
 
-    print("\n" + "=" * 60)
     print("TASK 2: Creating 3D SFD and BMD for All Girders")
-    print("=" * 60)
 
     # Create 3D diagrams
     fig_bmd_3d = create_3d_force_diagram(
@@ -229,7 +227,6 @@ def create_3d_force_diagram(data_loader, force_type="Mz", diagram_name="Force"):
 
 # Script Entry Point
 
-
 if __name__ == "__main__":
     print("\nLoading data...")
     loader = DataLoader()
@@ -237,4 +234,4 @@ if __name__ == "__main__":
 
     create_3d_diagrams(loader)
 
-    print("\n✓ Task 2 completed successfully!")
+    print("\nTask 2 completed successfully!")

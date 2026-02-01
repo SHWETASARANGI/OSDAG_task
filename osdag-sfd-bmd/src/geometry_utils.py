@@ -1,6 +1,6 @@
 """
 Geometry Utilities
-Helper functions for geometric calculations and girder processing.
+Functions for geometric calculations and girder processing.
 """
 
 import numpy as np

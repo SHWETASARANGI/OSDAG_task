@@ -19,8 +19,7 @@ PLOTS_DIR = PROJECT_ROOT / "plots"
 
 sys.path.insert(0, str(SRC_DIR))
 
-
-# Imports (after path setup)
+# Imports 
 from load_data import DataLoader
 from task1_sfd_bmd_2d import create_2d_diagrams
 from task2_sfd_bmd_3d import create_3d_diagrams
@@ -47,7 +46,7 @@ def main():
 
         PLOTS_DIR.mkdir(exist_ok=True)
 
-        print(f"  ✓ src directory:   {SRC_DIR}")
+        print(f"  ✓ source directory:   {SRC_DIR}")
         print(f"  ✓ data directory:  {DATA_DIR}")
         print(f"  ✓ plots directory: {PLOTS_DIR}")
 
@@ -72,24 +71,29 @@ def main():
             output_dir=str(PLOTS_DIR)
         )
 
+        print("\n" + "-" * 40)
         print("Task 1 completed successfully!")
+        print("-" * 40)
        
         # Task 2: 3D SFD & BMD
-        
+        print("\n" + "-" * 50)
         print("Running Task 2: 3D SFD & BMD (All Girders)")
+        print("-" * 50)
 
         fig_bmd_3d, fig_sfd_3d = create_3d_diagrams(
             loader,
             output_dir=str(PLOTS_DIR)
         )
 
+        print("\n" + "-" * 40)
         print("Task 2 completed successfully!")
+        print("-" * 40)
 
     
         # Final Summary
-        print("\n" + "-" * 60)
+        print("\n" + "=" * 60)
         print("ALL TASKS COMPLETED SUCCESSFULLY!")
-        print("-" * 60)
+        print("=" * 60)
 
         print("\nGenerated Output Files:")
         print("  plots/task1_bmd.png  - 2D Bending Moment Diagram")
