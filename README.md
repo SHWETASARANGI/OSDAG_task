@@ -73,6 +73,7 @@ HTML files should be opened in a web browser
 Conclusion
 
 This project successfully demonstrates:
+
 Structural data handling
 Engineering-correct force extraction
 Professional-grade visualization
