@@ -9,6 +9,7 @@ The project includes:
 Static PNG outputs and interactive HTML plots
 
 Project Structure
+
 osdag-sfd-bmd/
 │
 ├── main.py                     # Main driver script
@@ -37,6 +38,7 @@ osdag-sfd-bmd/
 └── .venv/                      # Virtual environment 
 
 Requirements
+
 Python 3.9+
 Required Python packages: 
 pip install numpy plotly xarray kaleido
@@ -54,12 +56,14 @@ Save all plots in the plots/ directory
 
 
 Outputs
+
 Task 1 – 2D Diagrams (Central Girder)
 plots/task1_bmd.png
 plots/task1_sfd.png
 Interactive HTML versions
 
 Task 2 – 3D Diagrams (All Girders)
+
 plots/task2_3d_bmd.html
 plots/task2_3d_sfd.html
 
@@ -67,6 +71,7 @@ PNG files can be opened with any image viewer
 HTML files should be opened in a web browser
 
 Conclusion
+
 This project successfully demonstrates:
 Structural data handling
 Engineering-correct force extraction
