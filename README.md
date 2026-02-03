@@ -48,7 +48,9 @@ How to Run the Project
 Activate virtual environment (Windows PowerShell): .venv\Scripts\Activate.ps1
 
 Run the complete project from the root directory: python main.py
+
 This will:
+
 Load all data
 Run Task 1 (2D SFD & BMD for central girder)
 Run Task 2 (3D SFD & BMD for all girders)
@@ -58,6 +60,7 @@ Save all plots in the plots/ directory
 Outputs
 
 Task 1 – 2D Diagrams (Central Girder)
+
 plots/task1_bmd.png
 plots/task1_sfd.png
 Interactive HTML versions
@@ -75,7 +78,10 @@ Conclusion
 This project successfully demonstrates:
 
 Structural data handling
+
 Engineering-correct force extraction
+
 Professional-grade visualization
+
 Clean, modular Python architecture
 
