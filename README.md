@@ -10,7 +10,7 @@ Static PNG outputs and interactive HTML plots
 
 ---
 
-## 🚀 Features
+## 🚀Key Features
 
 * 2D SFD and BMD for the central girder
 * 3D SFD and BMD for all girders
